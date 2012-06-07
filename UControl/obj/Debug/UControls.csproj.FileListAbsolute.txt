@@ -1,0 +1,15 @@
+C:\temp\UControl\UControl\bin\Debug\UControls.dll
+C:\temp\UControl\UControl\bin\Debug\UControls.pdb
+C:\temp\UControl\UControl\obj\Debug\ResolveAssemblyReference.cache
+C:\temp\UControl\UControl\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\temp\UControl\UControl\obj\Debug\UControls_MarkupCompile.cache
+C:\temp\UControl\UControl\obj\Debug\UControls_MarkupCompile.lref
+C:\temp\UControl\UControl\obj\Debug\Themes\Generic.baml
+C:\temp\UControl\UControl\obj\Debug\UControls.g.resources
+C:\temp\UControl\UControl\obj\Debug\UControls.Properties.Resources.resources
+C:\temp\UControl\UControl\obj\Debug\GenerateResource.read.1.tlog
+C:\temp\UControl\UControl\obj\Debug\GenerateResource.write.1.tlog
+C:\temp\UControl\UControl\obj\Debug\UControls.dll
+C:\temp\UControl\UControl\obj\Debug\UControls.pdb
+C:\temp\UControl\UControl\bin\Debug\Microsoft.Practices.Prism.dll
+C:\temp\UControl\UControl\bin\Debug\Microsoft.Practices.ServiceLocation.dll

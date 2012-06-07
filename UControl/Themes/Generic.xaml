@@ -1,0 +1,96 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:UControls="clr-namespace:UControls" 
+    xmlns:Utils="clr-namespace:UControls.Utils">
+
+    <Utils:VisibilityConverter x:Key="VisibilityConverter" />
+
+    <Style TargetType="{x:Type UControls:UControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type UControls:UControl}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Padding="{TemplateBinding Padding}"
+                            Opacity="{TemplateBinding Opacity}">
+                        <ContentControl Content="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type UControls:Header}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type UControls:Header}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Padding="{TemplateBinding Padding}"
+                            Opacity="{TemplateBinding Opacity}">
+                        <Grid>
+                            <Label Content="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content}"
+                                   Height="Auto" Width="Auto" 
+                                   HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                   FontSize="{TemplateBinding FontSize}" 
+                                   Foreground="{TemplateBinding Foreground}" 
+                                   FontWeight="{TemplateBinding FontWeight}"
+                                   FontFamily="{TemplateBinding FontFamily}"
+                                   FontStretch="{TemplateBinding FontStretch}"
+                                   FontStyle="{TemplateBinding FontStyle}"/>
+
+                            <Button Height="20" HorizontalAlignment="Right" Margin="0,0,0,0" 
+                                    VerticalAlignment="Top" Width="20"
+                                    Command="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=CloseCommand}"
+                                    Visibility="{Binding RelativeSource={RelativeSource TemplatedParent},
+                                Path=CloserVisibility, Converter={StaticResource ResourceKey=VisibilityConverter}}"
+                                    FontFamily="Arial">
+                                <Button.Content>
+                                    <Image Source="/UControls;component/Resources/gnome_window_close.png" 
+                                           HorizontalAlignment="Stretch"
+                                           VerticalAlignment="Stretch"/>
+                                </Button.Content>
+                            </Button>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type UControls:Form}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type UControls:Form}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Padding="{TemplateBinding Padding}"
+                            Opacity="{TemplateBinding Opacity}">
+                        <!--<Border.Effect>
+                            
+                        </Border.Effect>-->
+                        <Grid x:Name="FormGrid">
+                            <Grid Background="White">
+                                <Grid.Effect>
+                                    <DropShadowEffect Color="Black" Opacity="0.5" Direction="270" ShadowDepth="0.7" />
+                                </Grid.Effect>
+                            </Grid>
+
+                            <StackPanel>
+                                <ContentControl Content="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Header}" />
+                                <!--<ContentControl>
+                                    <UControls:UControl Content="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content}" />
+                                </ContentControl>-->
+                                <ContentControl Content="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Body}" />
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

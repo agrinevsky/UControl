@@ -1,0 +1,17 @@
+C:\temp\UControl\TestApp\bin\Debug\TestApp.exe
+C:\temp\UControl\TestApp\bin\Debug\TestApp.pdb
+C:\temp\UControl\TestApp\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\temp\UControl\TestApp\obj\x86\Debug\MainWindow.baml
+C:\temp\UControl\TestApp\obj\x86\Debug\MainWindow.g.cs
+C:\temp\UControl\TestApp\obj\x86\Debug\App.g.cs
+C:\temp\UControl\TestApp\obj\x86\Debug\TestApp_MarkupCompile.cache
+C:\temp\UControl\TestApp\obj\x86\Debug\TestApp.g.resources
+C:\temp\UControl\TestApp\obj\x86\Debug\TestApp.Properties.Resources.resources
+C:\temp\UControl\TestApp\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\temp\UControl\TestApp\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\temp\UControl\TestApp\obj\x86\Debug\TestApp.exe
+C:\temp\UControl\TestApp\obj\x86\Debug\TestApp.pdb
+C:\temp\UControl\TestApp\bin\Debug\UControls.dll
+C:\temp\UControl\TestApp\bin\Debug\UControls.pdb
+C:\temp\UControl\TestApp\bin\Debug\Microsoft.Practices.Prism.dll
+C:\temp\UControl\TestApp\bin\Debug\Microsoft.Practices.ServiceLocation.dll
